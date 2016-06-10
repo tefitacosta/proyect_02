@@ -3,50 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>registro de usuarios</title>
+    <link rel="stylessheet" href="../proyect_02/styles/styles.css"> </link>
   </head>
-  <body>
-    <form name="Registro">
-  <table border="1" cellpadding="1" cellspacing="0" style="width:80%">
-  	<tbody>
-  		<tr>
-  			<td>Nombre de usuario</td>
-  			<td><input name="Username" type="text"/></td>
-  		</tr>
-  		<tr>
-  			<td>Nombre comun semilla</td>
-  			<td><input name="semilla ncomun" type="text" /></td>
-  		</tr>
-  		<tr>
-    		<td>Nombre cientifico semilla</td>
-    			<td><input name="semilla ncientifico" type="text" /></td>
-    	</tr>
-      <tr>
-        <td>Tipo de semilla</td>
-        <td><p><select name="Tipo de semilla"><option value="criolla">Semilla Criolla</option>
-        <option value="nativa">Nativa</option></select></p></td>
-        </tr>
-      <tr>
-        <td>Disponibilidad</td>
-        <td><p> <input type="checkbox" name="dispcomercio" value="dispcomercio"> Comercializaci&oacute;n<br>
-        <input type="checkbox" name="disptrueque" value="disptrueque"> Trueque<br>
-        <input type="checkbox" name="dispdis" value="dispidis"> Distribuci&oacute;n gratuita<br>
-        <input type="checkbox" name="dispcasa" value="dispicasa" > Casa de Semillas<br></td>
-      </tr>
-      <tr>
-        <td>Disponibilidad</td>
-        <td><p><select multiple="true" name="Disponibilidad">
-          <option value="comercio">Comercializaci&oacute;n</option>
-          <option value="trueque">Trueque</option>
-          <option value="distribuir">Distribuci&oacute;n gratuita</option>
-          <option value="custodia">Casa de Semillas</option></select></p></td>
-      </tr>
-    	<tr>
-  			<td><input name="Registrar" type="button" value="Registrar" /></td>
-  			<td><input name="cancel" type="button" value="Cancelar" /></td>
-  		</tr>
-  	</tbody>
-  </table>
-  </form>
 
+  <body>
+    <h1>Inventario Casa de Semillas Libres de Antioquia</h1>
+    <h2>Custodios asociados</h2>
+    <p>
+      La información recogida en este formulario es para uso de los custodios de
+      semillas agrupados en la red de Semillas Libres de Antioquia. Y esta fundamentada
+      en los convenios internacionales para la protección de la biodiversidad y la
+      soberanía alimentaria. </br>
+      Recuerde que si tiene dudas puede comunicarse al correo
+      <a href="emailto:casasdesemillas@gmail.com"> casasdesemillas@gmail.com </a>.
+    </p>
+
+    <div class="">
+      <form name="Registro">
+        <p>Nombre de usuario: <p> <input name="Username" type="text"/></br>
+    		<p>Nombre com&uacute;n semilla: </p> <input name="semilla ncomun" type="text"/></br>
+    	  <p> Nombre cient&iacute;fico semilla: </p><input name="semilla ncientifico" type="text"/></br>
+      	<p> Tipo de semilla: </p> <select name="Tipo de semilla">
+          <option value="criolla">Semilla Criolla</option>
+          <option value="nativa">Nativa</option></select> </br>
+        <p>Disponibilidad: </p>
+          <input type="checkbox" name="dispcomercio" value="dispcomercio"> Comercializaci&oacute;n</br>
+          <input type="checkbox" name="disptrueque" value="disptrueque"> Trueque</br>
+          <input type="checkbox" name="dispdis" value="dispidis"> Distribuci&oacute;n gratuita</br>
+          <input type="checkbox" name="dispcasa" value="dispicasa" > Casa de Semillas</br>
+        <input name="Registrar" type="button" value="Registrar" /></td>
+    		<input name="cancel" type="button" value="Cancelar" /></td>
+     </form>
+    </div>
   </body>
 </html>
