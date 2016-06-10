@@ -1,35 +1,41 @@
+p {
+  color: #0a0f26;
+  font: helvetica;
+  font-size: 14px
+}
+
 h1 {
-  color:#0000cc;
-  font:verdana;
+  color:#0f5412;
+  font:helvetica;
   font-size:16px;
   font-style:bold;
 }
 
 h2 {
-  color:#0000cc;
-  font:verdana;
+  color:#0f5412;
+  font:helvetica;
   font-size:14px;
   font-style:italic;
 }
 
 input[type=text], select {
-    width: 70%;
+    width: 95%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 2px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
-    width: 70%;
+    width: 95%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -37,8 +43,13 @@ input[type=submit]:hover {
     background-color: #708090;
 }
 
-div {
-    border-radius: 5px;
-    background-color: #B0E0E6;
-    padding: 20px;
+
+   .registro_semillas {
+  width: 60%
+  border-radius: 5px;
+  background-color: #B0E0E6;
+  padding: 20px;
+  align-content: flex-end;
+  align-self: center;
+  width: 80%;
 }
