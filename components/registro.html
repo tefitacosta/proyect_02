@@ -5,19 +5,43 @@
     <title>registro de usuarios</title>
   </head>
   <body>
-    <form name="Login">
-  <table border="0" cellpadding="0" cellspacing="0" style="width: 0px;">
+    <form name="Registro">
+  <table border="1" cellpadding="1" cellspacing="0" style="width:80%">
   	<tbody>
   		<tr>
   			<td>Nombre de usuario</td>
-  			<td><input name="Username" type="text" value="Username" /></td>
+  			<td><input name="Username" type="text"/></td>
   		</tr>
   		<tr>
-  			<td>Contrase&ntilde;a</td>
-  			<td><input name="password" type="password" value="password" /></td>
+  			<td>Nombre comun semilla</td>
+  			<td><input name="semilla ncomun" type="text" /></td>
   		</tr>
   		<tr>
-  			<td><input name="login" type="button" value="Iniciar sesión" /></td>
+    		<td>Nombre cientifico semilla</td>
+    			<td><input name="semilla ncientifico" type="text" /></td>
+    	</tr>
+      <tr>
+        <td>Tipo de semilla</td>
+        <td><p><select name="Tipo de semilla"><option value="criolla">Semilla Criolla</option>
+        <option value="nativa">Nativa</option></select></p></td>
+        </tr>
+      <tr>
+        <td>Disponibilidad</td>
+        <td><p> <input type="checkbox" name="dispcomercio" value="dispcomercio"> Comercializaci&oacute;n<br>
+        <input type="checkbox" name="disptrueque" value="disptrueque"> Trueque<br>
+        <input type="checkbox" name="dispdis" value="dispidis"> Distribuci&oacute;n gratuita<br>
+        <input type="checkbox" name="dispcasa" value="dispicasa" > Casa de Semillas<br></td>
+      </tr>
+      <tr>
+        <td>Disponibilidad</td>
+        <td><p><select multiple="true" name="Disponibilidad">
+          <option value="comercio">Comercializaci&oacute;n</option>
+          <option value="trueque">Trueque</option>
+          <option value="distribuir">Distribuci&oacute;n gratuita</option>
+          <option value="custodia">Casa de Semillas</option></select></p></td>
+      </tr>
+    	<tr>
+  			<td><input name="Registrar" type="button" value="Registrar" /></td>
   			<td><input name="cancel" type="button" value="Cancelar" /></td>
   		</tr>
   	</tbody>
