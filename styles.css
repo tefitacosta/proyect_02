@@ -53,3 +53,7 @@ input[type=submit]:hover {
   align-self: center;
   width: 80%;
 }
+
+.listaseleccion {
+  align-items: flex-start;
+}
