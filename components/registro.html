@@ -3,36 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>registro de usuarios</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
     <link rel="stylessheet" href="../proyect_02/styles/styles.css"> </link>
   </head>
 
   <body>
-    <h1>Inventario Casa de Semillas Libres de Antioquia</h1>
-    <h2>Custodios asociados</h2>
-    <p>
-      La información recogida en este formulario es para uso de los custodios de
-      semillas agrupados en la red de Semillas Libres de Antioquia. Y esta fundamentada
-      en los convenios internacionales para la protección de la biodiversidad y la
-      soberanía alimentaria. </br>
-      Recuerde que si tiene dudas puede comunicarse al correo
-      <a href="emailto:casasdesemillas@gmail.com"> casasdesemillas@gmail.com </a>.
-    </p>
-    <div class="registro_semillas">
-      <form name="registro">
-        <p>Nombre de usuario: <p> <input name="Username" type="text"/></br>
-    		<p>Nombre com&uacute;n semilla: </p> <input name="semilla ncomun" type="text"/></br>
-    	  <p> Nombre cient&iacute;fico semilla: </p><input name="semilla ncientifico" type="text"/></br>
-      	<p> Tipo de semilla: </p> <select name="Tipo de semilla">
-          <option value="criolla">Semilla Criolla</option>
-          <option value="nativa">Nativa</option></select> </br>
-        <p>Disponibilidad: </p>
-          <input type="checkbox" name="dispcomercio" value="dispcomercio"> Comercializaci&oacute;n</br>
-          <input type="checkbox" name="disptrueque" value="disptrueque"> Trueque</br>
-          <input type="checkbox" name="dispdis" value="dispidis"> Distribuci&oacute;n gratuita</br>
-          <input type="checkbox" name="dispcasa" value="dispicasa" > Casa de Semillas</br>
-        <input name="Registrar" type="button" value="Registrar" /></td>
-    		<input name="cancel" type="button" value="Cancelar" /></td>
-     </form>
+    <div class="container-fluid">
+
+     <div class="page-header">
+       <h1>Inventario Casa de Semillas Libres de Antioquia</h1>
+     </div>
+
+      <h2>Custodios asociados</h2>
+      <p>
+        La información recogida en este formulario es para uso de los custodios de
+        semillas agrupados en la red de Semillas Libres de Antioquia. Y esta fundamentada
+        en los convenios internacionales para la protección de la biodiversidad y la
+        soberanía alimentaria. </br>
+        Recuerde que si tiene dudas puede comunicarse al correo
+        <a href="emailto:casasdesemillas@gmail.com"> casasdesemillas@gmail.com </a>.
+      </p>
+      <div class="registro_semillas">
+        <form name="registro">
+          <p>Nombre de usuario: <p> <input name="Username" type="text"/></br>
+      		<p>Nombre com&uacute;n semilla: </p> <input name="semilla ncomun" type="text"/></br>
+      	  <p> Nombre cient&iacute;fico semilla: </p><input name="semilla ncientifico" type="text"/></br>
+        	<p> Tipo de semilla: </p> <select name="Tipo de semilla">
+            <option value="criolla">Semilla Criolla</option>
+            <option value="nativa">Nativa</option></select> </br>
+          <p>Disponibilidad: </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group">
+                  <span class="input-group-addon pull-left">
+                    <input type="checkbox" aria-label="..." name="dispcomercio" value="dispcomercio"> Comercializaci&oacute;n</br>
+                    <input type="checkbox" aria-label="..." name="disptrueque" value="disptrueque"> Trueque</br>
+                    <input type="checkbox" aria-label="..." name="dispdis" value="dispidis"> Distribuci&oacute;n gratuita</br>
+                    <input type="checkbox" aria-label="..." name="dispcasa" value="dispicasa" > Casa de Semillas</br>
+                  </span>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button name="registrar"  value="registrar" type="button" class="btn btn-default">Registrar</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button name="cancel"  value="cancel" type="button" class="btn btn-default">Cancelar</button>
+            </div>
+          </div>
+       </form>
+      </div>
     </div>
   </body>
 </html>
