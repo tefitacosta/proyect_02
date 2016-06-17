@@ -44,10 +44,10 @@ input[type=submit]:hover {
 }
 
 
-   .registro_semillas {
-  width: 60%
+.registrosemillas {
+  width: 60%;
   border-radius: 5px;
-  background-color: #B0E0E6;
+  background-color:#273d6c;
   padding: 20px;
   align-content: flex-end;
   align-self: center;

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>registro de usuarios</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
-    <link rel="stylessheet" href="../proyect_02/styles/styles.css"> </link>
+    <link rel="stylessheet" href="../styles.css"> </link>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="../proyect_02/assets/scripts.js"></script>
+
   </head>
 
   <body>
@@ -21,13 +24,13 @@
         en los convenios internacionales para la protección de la biodiversidad y la
         soberanía alimentaria. </br>
         Recuerde que si tiene dudas puede comunicarse al correo
-        <a href="emailto:casasdesemillas@gmail.com"> casasdesemillas@gmail.com </a>.
+        <a href="mailto:casasdesemillas@gmail.com"> casasdesemillas@gmail.com </a>.
       </p>
-      <div class="registro_semillas">
-        <form name="registro">
-          <p>Nombre de usuario: <p> <input name="Username" type="text"/></br>
-      		<p>Nombre com&uacute;n semilla: </p> <input name="semilla ncomun" type="text"/></br>
-      	  <p> Nombre cient&iacute;fico semilla: </p><input name="semilla ncientifico" type="text"/></br>
+      <div>
+        <form name="registro" class="registro-semillas">
+          <p>Nombre de usuario: <p> <input name="username" type="text"/></br>
+      		<p>Nombre com&uacute;n semilla: </p> <input name="semillancomun" type="text"/></br>
+      	  <p> Nombre cient&iacute;fico semilla: </p><input name="semillancientifico" type="text"/></br>
         	<p> Tipo de semilla: </p> <select name="Tipo de semilla">
             <option value="criolla">Semilla Criolla</option>
             <option value="nativa">Nativa</option></select> </br>
@@ -46,7 +49,7 @@
 
           <div class="btn-group btn-group-justified" role="group" aria-label="...">
             <div class="btn-group" role="group">
-              <button name="registrar"  value="registrar" type="button" class="btn btn-default">Registrar</button>
+              <button name="registrar"  value="registrar" type="button" class="btn btn-default" onclick="hola()">Registrar</button>
             </div>
             <div class="btn-group" role="group">
               <button name="cancel"  value="cancel" type="button" class="btn btn-default">Cancelar</button>
